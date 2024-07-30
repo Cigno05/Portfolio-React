@@ -1,0 +1,36 @@
+#navbar {
+
+    padding: 10px 20px;
+
+
+    .logo {
+        width: 50px;
+    }
+
+    ul {
+
+        list-style: none;
+        padding: 0 20px;
+        li a {
+            text-decoration: none;
+            color: var(--brand-white);
+        }
+    }
+
+    .navbar-link {
+        .navbar-list {
+            flex-grow: 1;
+            justify-content: center;
+            gap: 1.5rem;
+
+            .navbar-item {
+
+                & :hover {
+                    
+                    color: var(--brand-green);
+                }
+                
+            }
+        }
+    }
+}
