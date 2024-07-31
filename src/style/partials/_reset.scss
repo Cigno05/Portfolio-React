@@ -4,3 +4,19 @@ body  {
     color: var(--brand-white);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 50%;
+    position: sticky;
+    right: 0;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--brand-black); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-green); 
+}

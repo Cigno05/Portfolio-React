@@ -1,6 +1,12 @@
 #navbar {
 
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: var(--brand-black);
+    border: var(--brand-green) solid 2px;
+    // border-top: none;
+    border-radius: 0 0 20px 20px;
 
 
     .logo {
@@ -11,6 +17,7 @@
 
         list-style: none;
         padding: 0 20px;
+
         li a {
             text-decoration: none;
             color: var(--brand-white);
@@ -26,10 +33,10 @@
             .navbar-item {
 
                 & :hover {
-                    
+
                     color: var(--brand-green);
                 }
-                
+
             }
         }
     }
