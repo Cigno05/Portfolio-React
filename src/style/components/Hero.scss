@@ -1,0 +1,37 @@
+#hero {
+    display: flex;
+    border-bottom: 2px solid var(--brand-green);
+    padding-top: 24px;
+    background-image: url(/public/img/texture.jpg);
+
+    .img-name {
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .img-profile {
+        width: 300px;
+        border-radius: 50%;
+        border: 2px solid var(--brand-white);
+        background-color: var(--brand-green);
+    }
+
+    .hero-title {
+        font-size: 90px;
+        text-align: center;
+    }
+
+    .hero-contact {
+        display: flex;
+        justify-content: space-around;
+        padding: 24px 0;
+        font-size: 20px;
+
+        .title-contact {
+            color: var(--brand-green);
+            font-weight: 500;
+        }
+    }
+
+}
