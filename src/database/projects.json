@@ -1,0 +1,16 @@
+{
+
+    "projects": [
+        
+        {
+            "id":"0",
+            "title":"Fooder",
+            "imgUrl":"/img/Fooder.png",
+            "description":"Progetto per un azienda di consegna di alimenti, con la possiblità di aggiungere ristoranti e piatti da parte del ristoratore e di selezionare prodotti, aggiungerli nel carrello e procedere al pagamento da parte del cliente",
+            "technologies":[
+                "html5", "css3", "bootstrap", "vuejs", "vite","php", "laravel", "js"
+            ]
+            
+        }
+    ]
+}

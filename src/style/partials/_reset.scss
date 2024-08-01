@@ -1,7 +1,7 @@
 body  {
     width: 100%;
-    background-color: var(--brand-black);
-    color: var(--brand-white);
+    background-color: var(--brand-dark);
+    color: var(--brand-light);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -15,7 +15,7 @@ body  {
     background: transparent; 
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--brand-black); 
+    background: var(--brand-dark); 
 }
 ::-webkit-scrollbar-thumb:hover {
     background: var(--brand-green); 

@@ -2,9 +2,10 @@
 
     padding: 10px 20px;
     position: sticky;
+    z-index: 1;
     top: 0;
-    background-color: var(--brand-black);
-    border: var(--brand-green) solid 2px;
+    background-color: var(--brand-dark);
+    border: var(--brand-color) solid 2px;
     // border-top: none;
     border-radius: 0 0 20px 20px;
 
@@ -20,7 +21,7 @@
 
         li a {
             text-decoration: none;
-            color: var(--brand-white);
+            color: var(--brand-light);
         }
     }
 
@@ -34,7 +35,7 @@
 
                 & :hover {
 
-                    color: var(--brand-green);
+                    color: var(--brand-color);
                 }
 
             }

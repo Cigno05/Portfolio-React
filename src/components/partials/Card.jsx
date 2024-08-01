@@ -1,20 +1,29 @@
 
 
-function Card({title, imgUrl, description, technology}) {
-    
+function Card({title, imgUrl, description, technologies}) {
+
 
     return (
         <>
-            <div id="card" className="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src={imgUrl} class="img-fluid rounded-start" alt="..."></img>
+            <div id="card" className="card mb-4">
+                <div className="row g-0">
+                    <div className="card-img-container">
+                        <img src={imgUrl} className="rounded-start card-img" alt="..."></img>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">{title}</h5>
-                            <p class="card-text">{description}</p>
-                            <p class="card-text"><small class="text-body-secondary">{technology}</small></p>
+                    <div className="card-body-container">
+                        <div className="card-body">
+                            <h5 className="card-title">{title}</h5>
+                            <p className="card-text">{description}</p>
+                            <span className="card-tech">Tecnologie usate:</span>
+                            <div className="d-flex flex-wrap gap-3">
+                            {technologies.sort().map((tech) => (
+                                
+                                <img className="img-tech" src={`/img/${tech}.png`} alt=""></img>
+                                
+                            ))}
+
+                            </div>
+
                         </div>
                     </div>
                 </div>

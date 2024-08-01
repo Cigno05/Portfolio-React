@@ -2,11 +2,35 @@ import Hero from "./Hero"
 import Card from "./partials/Card"
 
 function Main() {
+    const projects = [
+
+        {
+            "id": "0",
+            "title": "Fooder",
+            "imgUrl": "/img/Fooder.png",
+            "description": "Progetto per un azienda di consegna di alimenti, con la possiblità di aggiungere ristoranti e piatti da parte del ristoratore e di selezionare prodotti, aggiungerli nel carrello e procedere al pagamento da parte del cliente",
+            "technologies": [
+                "html5", "css3", "bootstrap", "vuejs", "vite", "php", "laravel", "js"
+            ]
+
+        },
+
+        {
+            "id": "1",
+            "title": "Game Creator",
+            "imgUrl": "/img/game-creator.png",
+            "description": "Progetto sulla base di un gioco di ruolo dove è possibile aggiungere, modifcare ed eliminare sa i personaggi che le loro armi ",
+            "technologies": [
+                "html5", "css3", "bootstrap", "vuejs", "vite", "php", "laravel", "js"
+            ]
+
+        }
+    ]
 
     return (
         <>
             <main id="main">
-                
+
                 <Hero></Hero>
 
                 <div className="container mt-4 ">
@@ -14,14 +38,19 @@ function Main() {
                         <h1>I miei progetti</h1>
                     </div>
                     <div className="row">
-                        <div className="col-12 col-lg-6">
-                            <Card
-                            title='fooder'
-                            imgUrl='/img/vite.svg'
-                            description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus illum cumque obcaecati id consectetur.'
-                            technology='react, css. bootstrap'
-                            ></Card>
-                        </div>
+                        {projects.map((proj) => (
+                            <>
+                                <div className="col-12 col-lg-6">
+                                    <Card
+                                        key={proj.id}
+                                        title={proj.title}
+                                        imgUrl={proj.imgUrl}
+                                        description={proj.description}
+                                        technologies={proj.technologies}
+                                    ></Card>
+                                </div >
+                            </>
+                        ))}
                     </div>
                 </div>
             </main>

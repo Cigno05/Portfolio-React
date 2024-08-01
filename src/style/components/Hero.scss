@@ -1,6 +1,6 @@
 #hero {
     display: flex;
-    border: 2px solid var(--brand-green);
+    border: 2px solid var(--brand-color);
     border-radius: 20px;
     padding-top: 30px;
     background-image: url(/public/img/texture.jpg);
@@ -14,8 +14,7 @@
     .img-profile {
         width: 300px;
         border-radius: 50%;
-        border: 2px solid var(--brand-white);
-        background-color: var(--brand-green);
+        border: 2px solid var(--brand-color);
         justify-items: center;
        
     }
@@ -23,8 +22,8 @@
     .hero-title {
         font-size: 90px;
         text-align: center;
-        color: var(--brand-green);
-        text-shadow: 5px 5px 20px var(--brand-white);
+        color: var(--brand-color);
+        text-shadow: 5px 5px 20px var(--brand-light);
     }
 
     .hero-contact {
@@ -34,7 +33,7 @@
         font-size: 20px;
 
         .title-contact {
-            color: var(--brand-green);
+            color: var(--brand-color);
             font-weight: 500;
         }
     }
